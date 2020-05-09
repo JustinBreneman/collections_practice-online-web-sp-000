@@ -28,9 +28,9 @@ def kesha_maker(array)
   array.each do |word|
     array2 << word.split('')
   end
-  array2[0][2] = '$'
-  array2[1][2] = '$'
-  array2[2][2] = '$'
+  array2[0][2] && array2[1][2] && array2[2][2] = '$'
+#  array2[1][2] = '$'
+#  array2[2][2] = '$'
   array2.each_with_index do |word, index|
     array[index] = word.join('')
   end
@@ -55,10 +55,5 @@ end
 def add_s(array)
   array.each_with_index.collect do |word, index|
     index != 1 ? word << "s" : word
-#    if index != 1
-#      word << "s"
-#    else
-#      word
-#    end
   end
 end
