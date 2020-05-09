@@ -29,8 +29,6 @@ def kesha_maker(array)
     array2 << word.split('')
   end
   array2[0][2] = '$' && array2[1][2] = '$' && array2[2][2] = '$'
-#  array2[1][2] = '$'
-#  array2[2][2] = '$'
   array2.each_with_index do |word, index|
     array[index] = word.join('')
   end
