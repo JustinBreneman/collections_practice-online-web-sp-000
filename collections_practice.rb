@@ -34,4 +34,5 @@ def kesha_maker(array)
   array2.each_with_index do |word, index|
     array[index] = word.join(',')
   end
+  array
 end
