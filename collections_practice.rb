@@ -29,4 +29,5 @@ def kesha_maker(array)
     array2 << word.split('')
   end
   array2[0][2] = '$'
+  array2
 end
