@@ -25,18 +25,18 @@ end
 
 def kesha_maker(array)
   array2 = []
-  array.each { |word| array2 << word.split('') }
+  array.each { |word| array2 << word.split('')}
   array2[0][2] = '$' && array2[1][2] = '$' && array2[2][2] = '$'
-  array2.each_with_index { |word, index| array[index] = word.join('') }
+  array2.each_with_index { |word,index| array[index] = word.join('')}
   array
 end
 
 def find_a(array)
-  array.select { |word| word.start_with?("a") }
+  array.select{ |word| word.start_with?("a")}
 end
 
 def sum_array(array)
-  sum = 0
+  sum=0
   array.each do |num|
     num.to_i
     sum += num
@@ -45,5 +45,5 @@ def sum_array(array)
 end
 
 def add_s(array)
-  array.each_with_index.collect{|word, index|index!=1?word<<"s":word}
+  array.each_with_index.collect { |word, index| index != 1 ? word << "s" : word}
 end
