@@ -42,3 +42,12 @@ def find_a(array)
     word.start_with?("a")
   end
 end
+
+def sum_array(array)
+  sum = 0
+  array.each do |num|
+    num.to_i
+    sum += num
+  end
+  sum
+end
